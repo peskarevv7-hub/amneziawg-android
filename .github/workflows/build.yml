@@ -29,14 +29,6 @@ jobs:
         ref: ${{ inputs.ref }}
         submodules: recursive
         fetch-depth: 0
-        
-    - name: Prepare custom icon
-      shell: bash
-      run: |
-        set -euo pipefail
-         test -f broline_icon.png
-         mkdir -p ui/src/main/res/drawable
-         cp broline_icon.png ui/src/main/res/drawable/broline_icon.png
 
     - name: Set up JDK
       uses: actions/setup-java@v4
@@ -96,6 +88,9 @@ jobs:
       shell: bash
       run: |
         set -euo pipefail
+        test -f broline_icon.png
+        mkdir -p ui/src/main/res/drawable
+        cp broline_icon.png ui/src/main/res/drawable/broline_icon.png
         chmod +x ./gradlew
         ./gradlew --no-daemon --stacktrace ${{ steps.cfg.outputs.gradle_task }}
 
