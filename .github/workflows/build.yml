@@ -96,9 +96,6 @@ jobs:
       shell: bash
       run: |
         set -euo pipefail
-        test -f broline_icon.png
-        mkdir -p ui/src/main/res/drawable
-        cp broline_icon.png ui/src/main/res/drawable/broline_icon.png
         chmod +x ./gradlew
         ./gradlew --no-daemon --stacktrace ${{ steps.cfg.outputs.gradle_task }}
 
