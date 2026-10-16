@@ -348,3 +348,4 @@
     <string name="qr_code_copy_label">Shared data</string>
     <string name="qr_code_share_subject">AmneziaWG</string>
 </resources>
+    <string name="permission_label">BroLineVPN</string>
