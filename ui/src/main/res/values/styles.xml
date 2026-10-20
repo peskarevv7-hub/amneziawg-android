@@ -2,17 +2,22 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <style name="AmneziaWgTheme.Toolbar" parent="Widget.Material3.Toolbar">
-        <item name="android:background">?attr/colorSurface</item>
+        <item name="android:background">@drawable/broline_toolbar_gradient</item>
+        <item name="titleTextColor">@color/broline_text</item>
+        <item name="subtitleTextColor">@color/broline_text_secondary</item>
     </style>
 
     <style name="AppThemeBase" parent="AmneziaWgTheme">
         <item name="materialCardViewStyle">@style/AmneziaWgTheme.MaterialCardView</item>
         <item name="toolbarStyle">@style/AmneziaWgTheme.Toolbar</item>
         <item name="bottomSheetDialogTheme">@style/AmneziaWgTheme.BottomSheetDialog</item>
-        <item name="android:statusBarColor">@null</item>
+
+        <item name="android:statusBarColor">@color/broline_black</item>
+        <item name="android:windowBackground">@drawable/broline_screen_background</item>
+        <item name="colorControlActivated">@color/broline_cyan</item>
+        <item name="colorControlHighlight">@color/broline_ripple</item>
     </style>
 
-    <!-- Various additional API-specific features in values-v*/styles.xml -->
     <style name="AppTheme" parent="AppThemeBase" />
 
     <style name="AppTheme.NoActionBar">
@@ -21,8 +26,11 @@
     </style>
 
     <style name="AmneziaWgTheme.MaterialCardView" parent="Widget.Material3.CardView.Elevated">
-        <item name="cornerRadius">4dp</item>
-        <item name="contentPadding">8dp</item>
+        <item name="cornerRadius">14dp</item>
+        <item name="contentPadding">10dp</item>
+        <item name="cardBackgroundColor">@color/broline_card</item>
+        <item name="strokeColor">@color/broline_outline</item>
+        <item name="strokeWidth">1dp</item>
     </style>
 
     <style name="AmneziaWgTheme.BottomSheetDialog" parent="ThemeOverlay.Material3.BottomSheetDialog">
@@ -47,4 +55,5 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
 </resources>
