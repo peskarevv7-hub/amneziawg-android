@@ -24,7 +24,7 @@
         android:id="@+id/main_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="?attr/colorSurface"
+        android:background="@drawable/broline_screen_background"
         android:clipChildren="false">
 
         <LinearLayout
@@ -32,13 +32,66 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:id="@+id/broline_brand_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="18dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="18dp"
+                android:paddingBottom="8dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:contentDescription="BroLine logo"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/broline_icon" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BroLine"
+                        android:textColor="@color/broline_text"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.22"
+                        android:text="CHANNEL"
+                        android:textColor="@color/broline_magenta"
+                        android:textSize="11sp" />
+
+                    <View
+                        android:layout_width="136dp"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/broline_gradient" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
             <com.google.android.material.tabs.TabLayout
                 android:id="@+id/space_tabs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?attr/colorSurface"
+                android:background="@android:color/transparent"
                 app:tabGravity="start"
-                app:tabMode="scrollable" />
+                app:tabMode="scrollable"
+                app:tabIndicatorColor="@color/broline_cyan"
+                app:tabSelectedTextColor="@color/broline_cyan"
+                app:tabTextColor="@color/broline_text_secondary" />
 
             <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
                 android:id="@+id/swipe_refresh"
