@@ -23,11 +23,11 @@
     </data>
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="?attr/colorSurface"
-        android:clickable="true"
-        android:focusable="true">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/broline_screen_background"
+    android:clickable="true"
+    android:focusable="true">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
