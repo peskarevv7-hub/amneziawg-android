@@ -32,55 +32,11 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:id="@+id/broline_brand_header"
+            <View
+                android:id="@+id/broline_toolbar_separator"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:paddingStart="18dp"
-                android:paddingTop="8dp"
-                android:paddingEnd="18dp"
-                android:paddingBottom="8dp">
-
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="72dp"
-                    android:layout_height="72dp"
-                    android:contentDescription="BroLine logo"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/broline_icon" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="BroLine"
-                        android:textColor="@color/broline_text"
-                        android:textSize="25sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:letterSpacing="0.22"
-                        android:text="CHANNEL"
-                        android:textColor="@color/broline_magenta"
-                        android:textSize="11sp" />
-
-                    <View
-                        android:layout_width="136dp"
-                        android:layout_height="2dp"
-                        android:layout_marginTop="5dp"
-                        android:background="@drawable/broline_gradient" />
-
-                </LinearLayout>
-
-            </LinearLayout>
+                android:layout_height="2dp"
+                android:background="@drawable/broline_gradient" />
 
             <com.google.android.material.tabs.TabLayout
                 android:id="@+id/space_tabs"
@@ -132,8 +88,9 @@
                             android:layout_height="140dp"
                             android:layout_gravity="center"
                             android:layout_marginBottom="20dp"
-                            android:alpha="0.3333333"
-                            android:src="@drawable/ic_icon" />
+                            android:alpha="0.9"
+                            android:contentDescription="BroLine gradient B"
+                            android:src="@drawable/broline_letter_b" />
 
                         <TextView
                             android:id="@+id/empty_placeholder_text"
