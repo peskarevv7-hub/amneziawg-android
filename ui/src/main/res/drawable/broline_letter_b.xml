@@ -2,21 +2,21 @@
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:aapt="http://schemas.android.com/aapt"
     android:width="140dp"
-    android:height="140dp"
-    android:viewportWidth="100"
-    android:viewportHeight="100">
+    android:height="115dp"
+    android:viewportWidth="56"
+    android:viewportHeight="46">
 
     <path
         android:fillType="evenOdd"
-        android:pathData="M22,8 H52 C72,8 83,18 83,34 C83,43 78,49 70,52 C81,55 88,64 88,76 C88,92 76,100 54,100 H22 Z M40,26 V42 H51 C59,42 63,39 63,34 C63,29 59,26 51,26 Z M40,60 V81 H54 C63,81 67,77 67,70 C67,63 62,60 54,60 Z">
+        android:pathData="M9,0 L39,0 L42,2 L45,9 L44,20 L49,25 L51,31 L50,38 L46,43 L43,45 L8,45 L6,43 L8,37 L8,34 L6,32 L7,25 L14,11 L14,8 L9,2 Z M18,25 L22,20 L27,26 L37,27 L41,30 L41,32 L36,36 L23,36 L21,33 L24,28 L23,27 L20,28 Z M28,9 L34,9 L36,11 L36,14 L31,18 L25,18 L23,16 Z">
 
         <aapt:attr name="android:fillColor">
             <gradient
                 android:type="linear"
-                android:startX="10"
-                android:startY="5"
-                android:endX="90"
-                android:endY="95">
+                android:startX="43"
+                android:startY="0"
+                android:endX="7"
+                android:endY="45">
 
                 <item
                     android:color="@color/broline_cyan"
