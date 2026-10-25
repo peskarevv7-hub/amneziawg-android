@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="AppThemeBase" parent="AmneziaWgTheme">
+        <item name="materialCardViewStyle">@style/AmneziaWgTheme.MaterialCardView</item>
+        <item name="toolbarStyle">@style/AmneziaWgTheme.Toolbar</item>
+        <item name="bottomSheetDialogTheme">@style/AmneziaWgTheme.BottomSheetDialog</item>
+        <item name="android:statusBarColor">@color/broline_black</item>
+        <item name="android:windowBackground">@drawable/broline_screen_background</item>
+        <item name="colorControlActivated">@color/broline_cyan</item>
+        <item name="colorControlHighlight">@color/broline_ripple</item>
+        <item name="android:windowSplashScreenBackground">@color/broline_black</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/broline_splash</item>
+    </style>
+</resources>
