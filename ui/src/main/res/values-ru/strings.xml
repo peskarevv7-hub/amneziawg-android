@@ -159,8 +159,8 @@
     <string name="interface_title">Интерфейс</string>
     <string name="key_contents_error">Плохие символы в ключе</string>
     <string name="key_length_error">Неправильная длина ключа</string>
-    <string name="key_length_explanation_base64">: ключи AmneziaWG base64 должны содержать 44 символа (32 байта)</string>
-    <string name="key_length_explanation_binary">: ключи AmneziaWG должны быть 32 байта</string>
+    <string name="key_length_explanation_base64">: ключи BroLineVPN base64 должны содержать 44 символа (32 байта)</string>
+    <string name="key_length_explanation_binary">: ключи BroLineVPN должны быть 32 байта</string>
     <string name="key_length_explanation_hex">: HEX-ключи AmneziaWG должны содержать 64 символа (32 байта)</string>
     <string name="latest_handshake">Последнее рукопожатие</string>
     <string name="latest_handshake_ago">%s назад</string>
@@ -199,8 +199,8 @@
     <string name="parse_error_integer">число</string>
     <string name="parse_error_reason">Невозможно разобрать %1$s “%2$s”</string>
     <string name="peer">Пир</string>
-    <string name="permission_description">контроль над туннелями AmneziaWG, включение и отключение туннелей по своему усмотрению, возможность неправильного управления сетевым трафиком</string>
-    <string name="permission_label">управлять туннелями AmneziaWG</string>
+    <string name="permission_description">контроль над туннелями BroLineVPN, включение и отключение туннелей по своему усмотрению, возможность неправильного управления сетевым трафиком</string>
+    <string name="permission_label">управлять туннелями BroLineVPN</string>
     <string name="persistent_keepalive">Постоянное соединение</string>
     <string name="pre_shared_key">Общий ключ</string>
     <string name="pre_shared_key_enabled">включено</string>
@@ -222,7 +222,7 @@
     <string name="shell_start_error">Не удалось запустить Shell: %d</string>
     <string name="success_application_will_restart">Успешно. Приложение будет перезапущено…</string>
     <string name="toggle_all">Инвертировать все</string>
-    <string name="toggle_error">Ошибка переключения туннеля AmneziaWG: %s</string>
+    <string name="toggle_error">Ошибка переключения туннеля BroLineVPN: %s</string>
     <string name="tools_installer_already">awg и awg-quick уже установлены</string>
     <string name="tools_installer_failure">Не удалось установить инструменты командной строки (нет root?)</string>
     <string name="tools_installer_initial">Установить дополнительные инструменты для сценариев</string>
@@ -254,7 +254,22 @@
     <string name="tunnel_rename_success">Туннель успешно переименован в “%s”</string>
     <string name="type_name_go_userspace">Go в пользовательском пространстве</string>
     <string name="type_name_kernel_module">Модуль ядра</string>
-    <string name="unknown_error">Неизвестная ошибка</string><string name="import_disclaimer">Подключите свой сервер BroLineVPN: импортируйте файл конфигурации, используйте ссылку на подписку или отсканируйте QR-код.</string>
+    <string name="unknown_error">Неизвестная ошибка</string>
+    <string name="version_summary">Бэкенд: %1$s %2$s</string>
+    <string name="version_summary_checking">Проверка версии бэкэнда %s</string>
+    <string name="version_summary_unknown">Неизвестная версия %s</string>
+    <string name="version_title">BroLineVPN создан на базе Amnezia WG v%s</string>
+    <string name="vpn_not_authorized_error">Сервис VPN не авторизован пользователем</string>
+    <string name="vpn_start_error">Не удалось запустить службу Android VPN</string>
+    <string name="zip_export_error">Не удалось экспортировать туннели: %s</string>
+    <string name="zip_export_success">Сохранено в “%s”</string>
+    <string name="zip_export_summary">Zip-файл будет сохранен в папке загрузок</string>
+    <string name="zip_export_title">Экспорт туннелей в zip-файл</string>
+    <string name="biometric_prompt_zip_exporter_title">Аутентификация для экспорта туннелей</string>
+    <string name="biometric_prompt_private_key_title">Аутентификация для просмотра приватного ключа</string>
+    <string name="biometric_auth_error">Ошибка аутентификации</string>
+    <string name="biometric_auth_error_reason">Ошибка аутентификации: %s</string>
+    <string name="import_disclaimer">Подключите свой сервер BroLineVPN: импортируйте файл конфигурации, используйте ссылку на подписку или отсканируйте QR-код.</string>
     <string name="tunnel_status_connected">Подключено</string>
     <string name="tunnel_status_connecting">Подключение…</string>
 </resources>
