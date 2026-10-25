@@ -37,7 +37,10 @@ jobs:
         test -f broline_icon.png
         mkdir -p ui/src/main/res/drawable
         cp broline_icon.png ui/src/main/res/drawable/broline_icon.png
-      
+
+        test -f broline_splash.png
+        cp broline_splash.png ui/src/main/res/drawable/broline_splash.png
+
     - name: Set up JDK
       uses: actions/setup-java@v4
       with:
